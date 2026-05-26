@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace CookieClicker
 {
-    /// <summary>
-    /// Interakční logika pro ShopWindow.xaml
-    /// </summary>
     public partial class ShopWindow : Window
     {
         private GameState game;
@@ -32,9 +29,6 @@ namespace CookieClicker
             BabičkaCena.Content = $"Cena: {game.BabičkaCena}";
             PekárnaCena.Content = $"Cena: {game.PekárnaCena}";
             TovárnaCena.Content = $"Cena: {game.TovárnaCena}";
-
-
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -46,8 +40,6 @@ namespace CookieClicker
                 game.LepšíKurzorCena *= 1.5;
                 LepšíKurzorCena.Content = $"Cena: {game.LepšíKurzorCena}";
                 game.upgradeCount++;
-
-
             }
         }
 
@@ -60,8 +52,6 @@ namespace CookieClicker
                 game.DvojitéKliknutíCena *= 1.5;
                 DvojitéKliknutíCena.Content = $"Cena: {game.DvojitéKliknutíCena}";
                 game.upgradeCount++;
-
-
             }
         }
 
@@ -74,8 +64,6 @@ namespace CookieClicker
                 game.BabičkaCena *= 1.5;
                 BabičkaCena.Content = $"Cena: {game.BabičkaCena}";
                 game.upgradeCount++;
-
-
             }
         }
 
@@ -88,8 +76,6 @@ namespace CookieClicker
                 game.PekárnaCena *= 1.5;
                 PekárnaCena.Content = $"Cena: {game.PekárnaCena}";
                 game.upgradeCount++;
-
-
             }
         }
 
@@ -102,8 +88,6 @@ namespace CookieClicker
                 game.TovárnaCena *= 1.5;
                 TovárnaCena.Content = $"Cena: {game.TovárnaCena}";
                 game.upgradeCount++;
-
-
             }
         }
     }

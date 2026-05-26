@@ -12,9 +12,6 @@ using System.Windows.Threading;
 
 namespace CookieClicker
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
 
@@ -46,30 +43,20 @@ namespace CookieClicker
             game.TovárnaCena = 2500;
 
             timerCPS = new DispatcherTimer();
-
             timerCPS.Interval = TimeSpan.FromSeconds(1);
-
             timerCPS.Tick += TimerCPS_Tick;
-
             timerCPS.Start();
 
 
-
-
             timerStats = new DispatcherTimer();
-
             timerStats.Interval = TimeSpan.FromSeconds(0.1);
-
             timerStats.Tick += TimerStats_Tick;
-
             timerStats.Start();
-
         }
 
         private void TimerCPS_Tick(object sender, EventArgs e)
         {
-            game.cookiesCount += game.cookiesPerSecond;
-            
+            game.cookiesCount += game.cookiesPerSecond;    
         }
 
         private void TimerStats_Tick(object sender, EventArgs e)
@@ -79,7 +66,6 @@ namespace CookieClicker
           _3.Content = game.cookiesPerSecond.ToString("0.00");
           _4.Content = game.totalClicks.ToString("0.00");
           _5.Content = game.upgradeCount.ToString("0.00");
-
         }
 
         private void Cookie_Click(object sender, RoutedEventArgs e)
@@ -87,7 +73,6 @@ namespace CookieClicker
             game.totalClicks += 1;
             game.cookiesCount += game.cookiesPerClick;
             TxtCookiesCount.Text = game.cookiesCount.ToString("0.00");
-
         }
 
         private void Store_Click(object sender, RoutedEventArgs e)
