@@ -9,12 +9,15 @@
     <Grid>
         <TextBlock x:Name="TxtCookiesCount" HorizontalAlignment="Left" Height="29" TextAlignment="Center" Margin="175,116,0,0" TextWrapping="Wrap" Text="Sušenky: 0" VerticalAlignment="Top" Width="166" FontWeight="Bold" FontSize="18"/>
         <Button x:Name="Cookie" Content="🍪" HorizontalAlignment="Left" Height="156" Margin="175,145,0,0" VerticalAlignment="Top" Width="166" Click="Cookie_Click" BorderBrush="White" Foreground="#FF736060" Background="White" FontSize="120"/>
-        <TextBlock x:Name="totalClicks" HorizontalAlignment="Left" Height="29" Margin="400,212,0,0" TextWrapping="Wrap" Text="Počet kliknutí: 0" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="cookiesPerClick" HorizontalAlignment="Left" Height="30" Margin="400,152,0,0" TextWrapping="Wrap" Text="Sušenka za kliknutí: 0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="totalClicks" HorizontalAlignment="Left" Height="29" Margin="400,212,0,0" TextWrapping="Wrap" Text="Počet kliknutí: " VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="cookiesPerClick" HorizontalAlignment="Left" Height="30" Margin="400,152,0,0" TextWrapping="Wrap" Text="Sušenky za kliknutí: " VerticalAlignment="Top" Width="120"/>
         <Button x:Name="Store" Content="Obchod" HorizontalAlignment="Left" Height="30" Margin="400,269,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.016,1.852" Click="Store_Click"/>
-        <TextBlock x:Name="cookiesPerSecond" HorizontalAlignment="Left" Height="30" Margin="400,182,0,0" TextWrapping="Wrap" Text="Sušenka za vteřinu: 0" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="cookiesCount"  HorizontalAlignment="Left" Height="28" Margin="400,124,0,0" TextWrapping="Wrap" Text="Počet sušenek: 0" VerticalAlignment="Top" Width="120" Cursor="ArrowCD"/>
-        <TextBlock x:Name="upgradeCount" HorizontalAlignment="Left" Height="29" Margin="400,240,0,0" TextWrapping="Wrap" Text="Počet vylepšení: 0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="cookiesPerSecond" HorizontalAlignment="Left" Height="30" Margin="400,182,0,0" TextWrapping="Wrap" Text="Sušenky za vteřinu: " VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="upgradeCount" HorizontalAlignment="Left" Height="29" Margin="400,240,0,0" TextWrapping="Wrap" Text="Počet vylepšení: " VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="_2" Content="1" HorizontalAlignment="Left" Margin="520,147,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="_3" Content="0" HorizontalAlignment="Left" Margin="512,178,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="_4" Content="0" HorizontalAlignment="Left" Margin="484,210,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="_5" Content="0" HorizontalAlignment="Left" Margin="492,238,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

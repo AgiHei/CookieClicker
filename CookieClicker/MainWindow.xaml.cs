@@ -20,7 +20,8 @@ namespace CookieClicker
 
         private GameState game;
 
-        private DispatcherTimer timer;
+        private DispatcherTimer timerCPS;
+        private DispatcherTimer timerStats;
 
         private ShopWindow shopWindow;
 
@@ -44,24 +45,42 @@ namespace CookieClicker
             game.PekárnaCena = 500;
             game.TovárnaCena = 2500;
 
-            timer = new DispatcherTimer();
+            timerCPS = new DispatcherTimer();
 
-            timer.Interval = TimeSpan.FromSeconds(1);
+            timerCPS.Interval = TimeSpan.FromSeconds(1);
 
-            timer.Tick += Timer_Tick;
+            timerCPS.Tick += TimerCPS_Tick;
 
-            timer.Start();
+            timerCPS.Start();
+
+
+
+
+            timerStats = new DispatcherTimer();
+
+            timerStats.Interval = TimeSpan.FromSeconds(0.1);
+
+            timerStats.Tick += TimerStats_Tick;
+
+            timerStats.Start();
+
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void TimerCPS_Tick(object sender, EventArgs e)
         {
             game.cookiesCount += game.cookiesPerSecond;
-            TxtCookiesCount.Text = game.cookiesCount.ToString("0.00");
+            
         }
 
+        private void TimerStats_Tick(object sender, EventArgs e)
+        {
+          TxtCookiesCount.Text = game.cookiesCount.ToString("0.00");
+          _2.Content = game.cookiesPerClick.ToString("0.00");
+          _3.Content = game.cookiesPerSecond.ToString("0.00");
+          _4.Content = game.totalClicks.ToString("0.00");
+          _5.Content = game.upgradeCount.ToString("0.00");
 
-
-
+        }
 
         private void Cookie_Click(object sender, RoutedEventArgs e)
         {
