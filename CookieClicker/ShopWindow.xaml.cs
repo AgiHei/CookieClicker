@@ -30,7 +30,7 @@ namespace CookieClicker
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(game.cookiesCount >= game.LepšíKurzorCena)
+            if (game.cookiesCount >= game.LepšíKurzorCena)
             {
                 game.cookiesCount -= game.LepšíKurzorCena;
                 game.cookiesPerClick += 1;
@@ -38,7 +38,7 @@ namespace CookieClicker
                 LepšíKurzorCena.Content = $"Cena: {game.LepšíKurzorCena}";
                 game.upgradeCount++;
 
-               
+
             }
         }
 
@@ -50,6 +50,48 @@ namespace CookieClicker
                 game.cookiesPerClick += 5;
                 game.LepšíKurzorCena *= 1.5;
                 LepšíKurzorCena.Content = $"Cena: {game.DvojitéKliknutíCena}";
+                game.upgradeCount++;
+
+
+            }
+        }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            if (game.cookiesCount >= game.BabičkaCena)
+            {
+                game.cookiesCount -= game.BabičkaCena;
+                game.cookiesPerSecond += 1;
+                game.LepšíKurzorCena *= 1.5;
+                LepšíKurzorCena.Content = $"Cena: {game.BabičkaCena}";
+                game.upgradeCount++;
+
+
+            }
+        }
+
+        private void Button_Click4(object sender, RoutedEventArgs e)
+        {
+            if (game.cookiesCount >= game.PekárnaCena)
+            {
+                game.cookiesCount -= game.PekárnaCena;
+                game.cookiesPerSecond += 5;
+                game.LepšíKurzorCena *= 1.5;
+                LepšíKurzorCena.Content = $"Cena: {game.PekárnaCena}";
+                game.upgradeCount++;
+
+
+            }
+        }
+
+        private void Button_Click5(object sender, RoutedEventArgs e)
+        {
+            if (game.cookiesCount >= game.TovárnaCena)
+            {
+                game.cookiesCount -= game.TovárnaCena;
+                game.cookiesPerSecond += 25;
+                game.LepšíKurzorCena *= 1.5;
+                LepšíKurzorCena.Content = $"Cena: {game.TovárnaCena}";
                 game.upgradeCount++;
 
 
