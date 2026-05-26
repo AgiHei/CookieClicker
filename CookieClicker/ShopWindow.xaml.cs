@@ -28,5 +28,32 @@ namespace CookieClicker
             game = gameState;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if(game.cookiesCount >= game.LepšíKurzorCena)
+            {
+                game.cookiesCount -= game.LepšíKurzorCena;
+                game.cookiesPerClick += 1;
+                game.LepšíKurzorCena *= 1.5;
+                LepšíKurzorCena.Content = $"Cena: {game.LepšíKurzorCena}";
+                game.upgradeCount++;
+
+               
+            }
+        }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            if (game.cookiesCount >= game.DvojitéKliknutíCena)
+            {
+                game.cookiesCount -= game.DvojitéKliknutíCena;
+                game.cookiesPerClick += 5;
+                game.LepšíKurzorCena *= 1.5;
+                LepšíKurzorCena.Content = $"Cena: {game.DvojitéKliknutíCena}";
+                game.upgradeCount++;
+
+
+            }
+        }
     }
 }

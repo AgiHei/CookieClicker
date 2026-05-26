@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace CookieClicker
 {
@@ -19,10 +20,9 @@ namespace CookieClicker
 
         private GameState game;
 
-        private void UpdateUI()
-        {
-            TxtCookiesCount.Text = $"Sušenky: {game.cookiesCount}";
-        }
+        private DispatcherTimer timer;
+
+        
 
         public MainWindow()
         {
@@ -36,10 +36,27 @@ namespace CookieClicker
             game.totalClicks = 0;
             game.upgradeCount = 0;
 
-            UpdateUI();
+            game.LepšíKurzorCena = 10;
+            game.DvojitéKliknutíCena = 50;
+            game.BabičkaCena = 100;
+            game.PekárnaCena = 500;
+            game.TovárnaCena = 2500;
+
+            timer = new DispatcherTimer();
+
+            timer.Interval = TimeSpan.FromSeconds(1);
+
+            timer.Tick += Timer_Tick;
+
+            timer.Start();
         }
 
-        
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            game.cookiesCount += game.cookiesPerSecond;
+        }
+
+
 
 
 

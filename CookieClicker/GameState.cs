@@ -13,6 +13,13 @@ namespace CookieClicker
             public double cookiesPerSecond { get; set; }
             public int totalClicks { get; set; }
             public int upgradeCount { get; set; }
-        }
+
+            public double LepšíKurzorCena { get; set; }
+            public double DvojitéKliknutíCena { get; set; }
+            public double BabičkaCena { get; set; }
+            public double PekárnaCena { get; set; }
+            public double TovárnaCena { get; set; }
     }
+    }
+
 
