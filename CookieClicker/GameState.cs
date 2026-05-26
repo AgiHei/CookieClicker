@@ -8,11 +8,11 @@ namespace CookieClicker
 {
         public class GameState
         {
-            public double Cookies { get; set; }
+            public double CookiesCount { get; set; }
             public double CookiesPerClick { get; set; }
             public double CookiesPerSecond { get; set; }
             public int TotalClicks { get; set; }
-            public int TotalUpgradesBought { get; set; }
+            public int upgradeCount { get; set; }
         }
     }
 
