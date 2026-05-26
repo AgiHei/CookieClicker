@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="ShopWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="72,26,0,0" TextWrapping="Wrap" Text="Lepší Kurzor" VerticalAlignment="Top" Width="71" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="72,26,0,0" TextWrapping="Wrap" Text="Lepší Kurzor" VerticalAlignment="Top" Width="71" />
         <Button x:Name="LepšiKurzorButton" Content="Button" HorizontalAlignment="Left" Margin="72,111,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click"/>
         <Label x:Name="LepšíKurzorCena" Content="Cena: 10" HorizontalAlignment="Left" Margin="80,80,0,0" VerticalAlignment="Top"/>
         <Label Content="Zvýší počet sušenek za klik o 1" HorizontalAlignment="Left" Margin="22,49,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="255,26,0,0" TextWrapping="Wrap" Text="Dvojité Kliknutí" VerticalAlignment="Top" Width="95" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
+        <TextBox HorizontalAlignment="Left" Margin="255,26,0,0" TextWrapping="Wrap" Text="Dvojité Kliknutí" VerticalAlignment="Top" Width="95"  RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -24,7 +24,7 @@
         <Button x:Name="DvojiteKliknutiButton" Content="Button" HorizontalAlignment="Left" Margin="264,111,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click2"/>
         <Label x:Name="LepšíKurzorCena_Kopírovat" Content="Cena: 50" HorizontalAlignment="Left" Margin="272,80,0,0" VerticalAlignment="Top"/>
         <Label Content="Zvýší počet sušenek za klik o 5" HorizontalAlignment="Left" Margin="214,49,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="505,26,0,0" TextWrapping="Wrap" Text="Babička" VerticalAlignment="Top" Width="52" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
+        <TextBox HorizontalAlignment="Left" Margin="505,26,0,0" TextWrapping="Wrap" Text="Babička" VerticalAlignment="Top" Width="52"  RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -37,7 +37,7 @@
         <Button x:Name="DvojiteKliknutiButton_Kopírovat" Content="Button" HorizontalAlignment="Left" Margin="489,111,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click3"/>
         <Label x:Name="LepšíKurzorCena_Kopírovat1" Content="Cena: 100" HorizontalAlignment="Left" Margin="494,80,0,0" VerticalAlignment="Top"/>
         <Label Content="Zvýší počet sušenek za sekdundu o 1" HorizontalAlignment="Left" Margin="422,49,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="105,194,0,0" TextWrapping="Wrap" Text="Pekárna" VerticalAlignment="Top" Width="52" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
+        <TextBox HorizontalAlignment="Left" Margin="105,194,0,0" TextWrapping="Wrap" Text="Pekárna" VerticalAlignment="Top" Width="52"  RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -50,7 +50,7 @@
         <Button x:Name="DvojiteKliknutiButton_Kopírovat1" Content="Button" HorizontalAlignment="Left" Margin="89,279,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click4"/>
         <Label x:Name="LepšíKurzorCena_Kopírovat2" Content="Cena: 500" HorizontalAlignment="Left" Margin="94,248,0,0" VerticalAlignment="Top"/>
         <Label Content="Zvýší počet sušenek za sekdundu o 5" HorizontalAlignment="Left" Margin="22,217,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="380,194,0,0" TextWrapping="Wrap" Text="Továrna" VerticalAlignment="Top" Width="52" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
+        <TextBox HorizontalAlignment="Left" Margin="380,194,0,0" TextWrapping="Wrap" Text="Továrna" VerticalAlignment="Top" Width="52"  RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

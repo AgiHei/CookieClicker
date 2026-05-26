@@ -11,7 +11,7 @@
         <Button x:Name="Cookie" Content="" HorizontalAlignment="Left" Height="156" Margin="175,145,0,0" VerticalAlignment="Top" Width="166" Click="Cookie_Click"/>
         <TextBlock x:Name="Klik" HorizontalAlignment="Left" Height="29" Margin="481,236,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="104"/>
         <TextBlock x:Name="Text" HorizontalAlignment="Left" Height="29" Margin="481,173,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="104"/>
-        <Button x:Name="Store" Content="Button" HorizontalAlignment="Left" Height="30" Margin="458,271,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="-0.016,1.852"/>
+        <Button x:Name="Store" Content="Button" HorizontalAlignment="Left" Height="30" Margin="458,271,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="-0.016,1.852" Click="Store_Click"/>
         <TextBlock x:Name="Statistic" HorizontalAlignment="Left" Height="29" Margin="481,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="104"/>
         <TextBlock x:Name="StatText"  HorizontalAlignment="Left" Height="28" Margin="481,145,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="104"/>
 
