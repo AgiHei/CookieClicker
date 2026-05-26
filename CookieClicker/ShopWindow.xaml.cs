@@ -57,7 +57,7 @@ namespace CookieClicker
             {
                 game.cookiesCount -= game.DvojitéKliknutíCena;
                 game.cookiesPerClick += 5;
-                game.LepšíKurzorCena *= 1.5;
+                game.DvojitéKliknutíCena *= 1.5;
                 DvojitéKliknutíCena.Content = $"Cena: {game.DvojitéKliknutíCena}";
                 game.upgradeCount++;
 
@@ -71,7 +71,7 @@ namespace CookieClicker
             {
                 game.cookiesCount -= game.BabičkaCena;
                 game.cookiesPerSecond += 1;
-                game.LepšíKurzorCena *= 1.5;
+                game.BabičkaCena *= 1.5;
                 BabičkaCena.Content = $"Cena: {game.BabičkaCena}";
                 game.upgradeCount++;
 
@@ -85,7 +85,7 @@ namespace CookieClicker
             {
                 game.cookiesCount -= game.PekárnaCena;
                 game.cookiesPerSecond += 5;
-                game.LepšíKurzorCena *= 1.5;
+                game.PekárnaCena *= 1.5;
                 PekárnaCena.Content = $"Cena: {game.PekárnaCena}";
                 game.upgradeCount++;
 
@@ -99,7 +99,7 @@ namespace CookieClicker
             {
                 game.cookiesCount -= game.TovárnaCena;
                 game.cookiesPerSecond += 25;
-                game.LepšíKurzorCena *= 1.5;
+                game.TovárnaCena *= 1.5;
                 TovárnaCena.Content = $"Cena: {game.TovárnaCena}";
                 game.upgradeCount++;
 
