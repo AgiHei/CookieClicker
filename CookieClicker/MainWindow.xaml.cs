@@ -67,5 +67,11 @@ namespace CookieClicker
             TxtCookiesCount.Text = game.cookiesCount.ToString("0.00");
 
         }
+
+        private void Store_Click(object sender, RoutedEventArgs e)
+        {
+            ShopWindow shop = new ShopWindow(game);
+            shop.Show();
+        }
     }
 }
