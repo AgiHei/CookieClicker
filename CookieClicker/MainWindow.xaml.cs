@@ -22,7 +22,9 @@ namespace CookieClicker
 
         private DispatcherTimer timer;
 
-        
+        private ShopWindow shopWindow;
+
+
 
         public MainWindow()
         {
@@ -54,6 +56,7 @@ namespace CookieClicker
         private void Timer_Tick(object sender, EventArgs e)
         {
             game.cookiesCount += game.cookiesPerSecond;
+            TxtCookiesCount.Text = game.cookiesCount.ToString("0.00");
         }
 
 
@@ -70,8 +73,20 @@ namespace CookieClicker
 
         private void Store_Click(object sender, RoutedEventArgs e)
         {
-            ShopWindow shop = new ShopWindow(game);
-            shop.Show();
+            if (shopWindow != null)
+            {
+                shopWindow.Activate();
+                return;
+            }
+
+            shopWindow = new ShopWindow(game);
+
+            shopWindow.Closed += (s, args) =>
+            {
+                shopWindow = null;
+            };
+
+            shopWindow.Show();
         }
     }
 }

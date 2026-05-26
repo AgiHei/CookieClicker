@@ -22,7 +22,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Button x:Name="DvojiteKliknutiButton" Content="Button" HorizontalAlignment="Left" Margin="264,111,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click2"/>
-        <Label x:Name="LepšíKurzorCena_Kopírovat" Content="Cena: 50" HorizontalAlignment="Left" Margin="272,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="DvojitéKliknutíCena" Content="Cena: 50" HorizontalAlignment="Left" Margin="272,80,0,0" VerticalAlignment="Top"/>
         <Label Content="Zvýší počet sušenek za klik o 5" HorizontalAlignment="Left" Margin="214,49,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="505,26,0,0" TextWrapping="Wrap" Text="Babička" VerticalAlignment="Top" Width="52"  RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
@@ -35,7 +35,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Button x:Name="DvojiteKliknutiButton_Kopírovat" Content="Button" HorizontalAlignment="Left" Margin="489,111,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click3"/>
-        <Label x:Name="LepšíKurzorCena_Kopírovat1" Content="Cena: 100" HorizontalAlignment="Left" Margin="494,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="BabičkaCena" Content="Cena: 100" HorizontalAlignment="Left" Margin="494,80,0,0" VerticalAlignment="Top"/>
         <Label Content="Zvýší počet sušenek za sekdundu o 1" HorizontalAlignment="Left" Margin="422,49,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="105,194,0,0" TextWrapping="Wrap" Text="Pekárna" VerticalAlignment="Top" Width="52"  RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
@@ -48,7 +48,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Button x:Name="DvojiteKliknutiButton_Kopírovat1" Content="Button" HorizontalAlignment="Left" Margin="89,279,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click4"/>
-        <Label x:Name="LepšíKurzorCena_Kopírovat2" Content="Cena: 500" HorizontalAlignment="Left" Margin="94,248,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PekárnaCena" Content="Cena: 500" HorizontalAlignment="Left" Margin="94,248,0,0" VerticalAlignment="Top"/>
         <Label Content="Zvýší počet sušenek za sekdundu o 5" HorizontalAlignment="Left" Margin="22,217,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="380,194,0,0" TextWrapping="Wrap" Text="Továrna" VerticalAlignment="Top" Width="52"  RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
@@ -61,7 +61,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Button x:Name="DvojiteKliknutiButton_Kopírovat2" Content="Button" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click5"/>
-        <Label x:Name="LepšíKurzorCena_Kopírovat3" Content="Cena: 2500" HorizontalAlignment="Center" Margin="0,248,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="TovárnaCena" Content="Cena: 2500" HorizontalAlignment="Center" Margin="0,248,0,0" VerticalAlignment="Top"/>
         <Label Content="Zvýší počet sušenek za sekdundu o 25" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top"/>
 
     </Grid>

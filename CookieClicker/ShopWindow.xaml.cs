@@ -26,6 +26,15 @@ namespace CookieClicker
             InitializeComponent();
 
             game = gameState;
+
+            LepšíKurzorCena.Content = $"Cena: {game.LepšíKurzorCena}";
+            DvojitéKliknutíCena.Content = $"Cena: {game.DvojitéKliknutíCena}";
+            BabičkaCena.Content = $"Cena: {game.BabičkaCena}";
+            PekárnaCena.Content = $"Cena: {game.PekárnaCena}";
+            TovárnaCena.Content = $"Cena: {game.TovárnaCena}";
+
+
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -49,7 +58,7 @@ namespace CookieClicker
                 game.cookiesCount -= game.DvojitéKliknutíCena;
                 game.cookiesPerClick += 5;
                 game.LepšíKurzorCena *= 1.5;
-                LepšíKurzorCena.Content = $"Cena: {game.DvojitéKliknutíCena}";
+                DvojitéKliknutíCena.Content = $"Cena: {game.DvojitéKliknutíCena}";
                 game.upgradeCount++;
 
 
@@ -63,7 +72,7 @@ namespace CookieClicker
                 game.cookiesCount -= game.BabičkaCena;
                 game.cookiesPerSecond += 1;
                 game.LepšíKurzorCena *= 1.5;
-                LepšíKurzorCena.Content = $"Cena: {game.BabičkaCena}";
+                BabičkaCena.Content = $"Cena: {game.BabičkaCena}";
                 game.upgradeCount++;
 
 
@@ -77,7 +86,7 @@ namespace CookieClicker
                 game.cookiesCount -= game.PekárnaCena;
                 game.cookiesPerSecond += 5;
                 game.LepšíKurzorCena *= 1.5;
-                LepšíKurzorCena.Content = $"Cena: {game.PekárnaCena}";
+                PekárnaCena.Content = $"Cena: {game.PekárnaCena}";
                 game.upgradeCount++;
 
 
@@ -91,7 +100,7 @@ namespace CookieClicker
                 game.cookiesCount -= game.TovárnaCena;
                 game.cookiesPerSecond += 25;
                 game.LepšíKurzorCena *= 1.5;
-                LepšíKurzorCena.Content = $"Cena: {game.TovárnaCena}";
+                TovárnaCena.Content = $"Cena: {game.TovárnaCena}";
                 game.upgradeCount++;
 
 
