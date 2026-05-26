@@ -19,24 +19,35 @@ namespace CookieClicker
 
         private GameState game;
 
+        private void UpdateUI()
+        {
+            TxtCookiesCount.Text = $"Sušenky: {game.cookiesCount}";
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+
+            game = new GameState();
+
+            game.cookiesCount = 0;
+            game.cookiesPerClick = 1;
+            game.cookiesPerSecond = 0;
+            game.totalClicks = 0;
+            game.upgradeCount = 0;
+
+            UpdateUI();
         }
 
-        float CookiesCount = 0;
-        float CookiesPerClick = 1;
-        float CookiesPerSecond = 0;
-        int totalClicks = 0;
-        int upgradeCount = 0;
         
+
 
 
         private void Cookie_Click(object sender, RoutedEventArgs e)
         {
-            totalClicks += 1;
-            CookiesCount += CookiesPerClick;
-            TxtCookiesCount.Text = CookiesCount.ToString("0.00");
+            game.totalClicks += 1;
+            game.cookiesCount += game.cookiesPerClick;
+            TxtCookiesCount.Text = game.cookiesCount.ToString("0.00");
 
         }
     }

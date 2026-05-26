@@ -19,9 +19,14 @@ namespace CookieClicker
     /// </summary>
     public partial class ShopWindow : Window
     {
-        public ShopWindow()
+        private GameState game;
+
+        public ShopWindow(GameState gameState)
         {
             InitializeComponent();
+
+            game = gameState;
         }
+
     }
 }
